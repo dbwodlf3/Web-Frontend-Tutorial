@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>now you understand Javascript.</h1>
+        <h1>how do you change "this" color? <br> like <p id="myEvent">"this!"</p></h1>
+        <br>
+        <h1>Then lets split up html,javascript,css files.</h1>
+        <a href="stepB2">nextPage</a>
+    </body>
+</html>
+
+<script>
+    function changeTheColor(event){
+        event.target.style.color = "red";
+    }
+
+    function init(){
+        var k = document.getElementById("myEvent");
+        k.addEventListener("click", changeTheColor);        
+    }
+    
+    window.onload = init;
+</script>
